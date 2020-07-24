@@ -1,0 +1,251 @@
+/* RESET CSS */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FONTS (polices) */
+@font-face {
+  font-family: "MoonFlower";
+  src: url("./Fonts/MoonFlower.ttf");
+}
+
+/* TYPOGRAPHY */
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* MAIN BLOCKS DESIGN */
+body {
+  background-color: transparent;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 1700px;
+  min-height: 1398px; */
+  /* margin: 0 auto; */
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  background-color: #343a40;
+  color: whitesmoke;
+}
+
+.footer>.copy {
+  font-size: small;
+  text-transform: uppercase;
+}
+
+/* HEADER DESIGN */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFC107;
+  padding: 4px 16px;
+}
+
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu>*+* {
+  margin-left: 8px;
+}
+
+.menu-item>a {
+  display: block;
+  padding: 16px;
+  color: #61122f;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+  text-align: center;
+  min-width: 120px;
+}
+
+.menu-item>a:hover {
+  color: #000080;
+  text-decoration: underline;
+}
+
+.menu-item-drop {
+  position: relative;
+}
+
+.menu-item-drop:hover>.submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.submenu-item>a {
+  display: block;
+  padding: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+  text-align: center;
+  min-width: 120px;
+}
+
+.submenu-item>a:hover {
+  color: green;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../images/hero-1-1280x850.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+.content {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.content>h3 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #343a40;
+}
+
+.content>h3+p {
+  margin-top: 16px;
+}
+
+/* PICTURES */
+.albums {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col-4 {
+  width: 25%;
+  opacity: 0.3;
+  transition: transform 0.5s ease-in-out;
+}
+
+.col-4:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/*  CONTACT */
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+.form-group>label {
+  min-width: 150px;
+}
+
+.form-group>input,
+.form-group>textarea,
+.form-group>select {
+  flex: 1;
+  margin-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #343a40;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #3e68ff;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #3e68ff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+
+/* 
+h1,
+h2 {
+  font-family: "MoonFlower", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+} */
