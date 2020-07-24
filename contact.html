@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Design of Carole YAV's restaurant website">
+	<meta name="keywords" content="html, css, restaurant">
+	<meta name="author" content="Carole YAV">
+	<link rel="icon" type="image/png" href="webroot/images/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap">
+	<link rel="stylesheet" href="./webroot/css/index.css">
+	<title>Carole YAV</title>
+</head>
+
+<body>
+	<!--Placement de l'enveloppe du site (wrapper)  -->
+	<div class="wrapper">
+		<!--Placement de la 1ère div (dans header)  -->
+		<header>
+			<nav>
+				<a href="./index.html" class="logo"><img src="./webroot/images/favicon.png" alt="Logo du site"></a>
+				<ul class="menu">
+					<li class="menu-item"><a href="./index.html">Welcome</a></li>
+					<li class="menu-item"><a href="./menu.html">Menu</a></li>
+					<li class="menu-item"><a href="./pictures.html">Pictures</a></li>
+					<li class="menu-item"><a href="./restaurant.html">Restaurant</a></li>
+					<li class="menu-item"><a href="./contact.html">Contact</a></li>
+					<li class="menu-item menu-item-drop">
+						<a href="./events.html">Events</a>
+						<ul class="submenu">
+							<li class="submenu-item"><a href="#">Event 1</a></li>
+							<li class="submenu-item"><a href="#">Event 2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<section class="hero">
+				<h2 class="title">Carole YAV's restaurant</h2>
+				<p class="subtitle">Share a composed sweet menu, eat and fun.</p>
+				<p class="address"">
+					Arts -loi 10, 1000 Brussels Belgium <br> Tuesday &ndash; Sunday: 10PM – Close &amp; Monday: Closed</p>
+			</section>
+		</header>
+
+		<!-- Placement des autres div (dans main) -->
+		<main class=" main">
+			<section class="content" id="contact">
+        <h3>Contact Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi ex, adipiscii!</p>
+        <form>
+          <div class="form-group">
+            <label for="contact-firstname">First name*:</label>
+            <input type="text" placeholder="Firstname" id="contact-firstname" required>
+          </div>
+          <div class="form-group">
+              <label for="contact-lastname">Last name*:</label>
+              <input type="text" placeholder="Lastname" id="contact-lastname" required>
+          </div>
+          <div class="form-group">
+              <label for="contact-email">Email*:</label>
+              <input type="email" placeholder="mail@example.com" id="contact-email" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-tel">Tel (optional):</label>
+            <input class="form-control" type="tel" placeholder="Telephone" id="contact-tel">
+          </div>
+          <div class="form-group">
+              <label for="contact-subject">Subject*:</label>
+              <select id="contact-subject" name="contact-subject">
+                <option value="none">--Please choose an option--</option>
+                <option value="waiting-time">Waiting time</option>
+                <option value="promo">Promo & coupons</option>
+                <option value="delivery">Delivery zone</option>
+                <option value="orders">Online orders & payments</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-comments">Comments (optional)</label>
+            <textarea rows="10" placeholder="Comments" id="contact-comments" name="contact-comments"></textarea>
+          </div>
+          <button type="submit">Send us</button>
+        </form>
+			</section>
+			</main>
+
+			<!-- Placement du footer (pied de page) -->
+			<footer class="footer">
+				<div class=" copy">&copy;2020&ndash;Design by Carole Yav
+				</div>
+			</footer>
+	</div>
+</body>
+
+</html>
