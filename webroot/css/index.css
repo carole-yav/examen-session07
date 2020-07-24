@@ -30,10 +30,6 @@ a {
 }
 
 /* FONTS (polices) */
-@font-face {
-  font-family: "MoonFlower";
-  src: url("./Fonts/MoonFlower.ttf");
-}
 
 /* TYPOGRAPHY */
 html {
@@ -62,9 +58,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* max-width: 1700px;
-  min-height: 1398px; */
-  /* margin: 0 auto; */
   min-height: 100vh;
 }
 
@@ -144,6 +137,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 100;
 }
 
 .submenu-item>a {
@@ -163,12 +157,22 @@ nav {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../images/hero-1-1280x850.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
   background-attachment: fixed;
   height: 350px;
+}
+
+.hero-content {
+  position: absolute;
+  color: whitesmoke;
+  z-index: 10;
 }
 
 .content {
@@ -186,8 +190,13 @@ nav {
 }
 
 .video {
+  display: flex;
   width: 80%;
   margin: 32px auto;
+}
+
+.video>*+* {
+  margin-left: 16px;
 }
 
 /* PICTURES */
