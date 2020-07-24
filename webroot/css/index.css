@@ -19,7 +19,8 @@ hr {
   display: block;
 }
 
-img {
+img,
+video {
   display: block;
   max-width: 100%;
 }
@@ -135,6 +136,7 @@ nav {
 
 .menu-item-drop:hover>.submenu {
   display: block;
+  background-color: lightcoral;
 }
 
 .submenu {
@@ -152,10 +154,12 @@ nav {
   font-size: small;
   text-align: center;
   min-width: 120px;
+  color: white;
 }
 
 .submenu-item>a:hover {
-  color: green;
+  background-color: #3e68ff;
+  color: white;
 }
 
 .hero {
@@ -179,6 +183,11 @@ nav {
 
 .content>h3+p {
   margin-top: 16px;
+}
+
+.video {
+  width: 80%;
+  margin: 32px auto;
 }
 
 /* PICTURES */
@@ -240,12 +249,3 @@ button {
   border: 1px solid #3e68ff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 }
-
-
-/* 
-h1,
-h2 {
-  font-family: "MoonFlower", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-} */
