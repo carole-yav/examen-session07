@@ -215,7 +215,7 @@ nav {
 }
 
 .col-4 {
-  flex-basis: 25%;
+  width: 25%;
   opacity: 0.3;
   transition: transform 0.5s ease-in-out;
 }
